@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ======================= SEO DE BASE ======================= -->
+<title>SANOU Antoine Franck Alain — Ingénieur Génie Civil | Calcul de Structures</title>
+<meta name="description" content="Bureau d'études structures : calcul de béton armé, dimensionnement, supervision de chantiers, notes de calcul et plans d'exécution. BAEL 91 / Eurocode 2 — Arche Ossature, Robot Structural Analysis, AutoCAD.">
+<meta name="keywords" content="ingénieur génie civil, calcul de structures, béton armé, BAEL, Eurocode, note de calcul, plan d'exécution, Arche Ossature, Robot, AutoCAD, Ouagadougou, Burkina Faso">
+<meta name="author" content="SANOU Antoine Franck Alain">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0e2a47">
+
+<!-- Open Graph / réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="SANOU Antoine Franck Alain — Ingénieur Génie Civil">
+<meta property="og:description" content="Bibliothèque technique : projets de structures, notes de calcul, plans d'exécution, téléchargements PDF.">
+<meta property="og:locale" content="fr_FR">
+
+<!-- Données structurées (SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "SANOU Antoine Franck Alain",
+  "jobTitle": "Ingénieur Génie Civil – Calcul de Structures",
+  "email": "mailto:sanouafa@gmail.com",
+  "telephone": "+226 74 24 05 53",
+  "knowsAbout": ["Béton armé","Calcul de structures","BAEL 91","Eurocode 2","Supervision de chantiers","Préfabrication"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Ouagadougou", "addressCountry": "BF" }
+}
+</script>
+
+<!-- ======================= POLICES ======================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* =========================================================================
+   SANOU Antoine — Portfolio Bureau d'études
+   Fichier unique : structure des styles
+   1. Variables (thème clair + sombre)
+   2. Base & utilitaires
+   3. Navigation
+   4. Hero
+   5. À propos / stats
+   6. Projets
+   7. Bibliothèque
+   8. Services
+   9. Blog
+   10. Contact
+   11. Footer
+   12. Modale / lecteur PDF
+   13. Animations & responsive
+   ========================================================================= */
+
+/* ---------- 1. VARIABLES DE THÈME ---------- */
+:root{
+  --bleu-fonce:#0e2a47;
+  --bleu:#1c4e80;
+  --bleu-clair:#2f74c0;
+  --accent:#2f74c0;
+  --gris:#5b6b7b;
+  --gris-clair:#eef2f6;
+  --bg:#f6f8fb;
+  --surface:#ffffff;
+  --surface-2:#ffffff;
+  --texte:#13243a;
+  --texte-doux:#5b6b7b;
+  --bordure:#e2e8f0;
+  --ombre:0 10px 30px -12px rgba(14,42,71,.18);
+  --ombre-forte:0 24px 60px -20px rgba(14,42,71,.30);
+  --rayon:18px;
+  --rayon-sm:12px;
+  --glass:rgba(255,255,255,.72);
+  --glass-bordure:rgba(255,255,255,.6);
+  --max:1200px;
+  --trans:.4s cubic-bezier(.22,.61,.36,1);
+}
+html[data-theme="dark"]{
+  --bleu-fonce:#dce8f7;
+  --bleu:#5ea0e8;
+  --bleu-clair:#7db4ef;
+  --accent:#5ea0e8;
+  --gris:#9aa7b5;
+  --gris-clair:#16243a;
+  --bg:#0a1424;
+  --surface:#101e34;
+  --surface-2:#13243d;
+  --texte:#e8eef6;
+  --texte-doux:#9fb0c4;
+  --bordure:#21344f;
+  --ombre:0 10px 30px -12px rgba(0,0,0,.5);
+  --ombre-forte:0 24px 60px -20px rgba(0,0,0,.65);
+  --glass:rgba(16,30,52,.7);
+  --glass-bordure:rgba(94,160,232,.18);
+}
+
+/* ---------- 2. BASE ---------- */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'IBM Plex Sans',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--texte);
+  line-height:1.65;
+  overflow-x:hidden;
+  transition:background var(--trans),color var(--trans);
+}
+/* fond texturé : grille technique discrète */
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background-image:
+    linear-gradient(var(--bordure) 1px,transparent 1px),
+    linear-gradient(90deg,var(--bordure) 1px,transparent 1px);
+  background-size:46px 46px;
+  opacity:.35;
+  -webkit-mask-image:radial-gradient(circle at 50% 0%,#000,transparent 70%);
+          mask-image:radial-gradient(circle at 50% 0%,#000,transparent 70%);
+}
+h1,h2,h3,h4,.logo{font-family:'Sora',sans-serif;font-weight:700;line-height:1.15;letter-spacing:-.02em}
+.mono{font-family:'IBM Plex Mono',monospace}
+a{color:inherit;text-decoration:none}
+img,svg{max-width:100%;display:block}
+section{padding:96px 0;position:relative}
+.wrap{width:90%;max-width:var(--max);margin:0 auto}
+
+/* En-têtes de section */
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;font-size:.8rem;letter-spacing:.25em;
+  text-transform:uppercase;color:var(--accent);display:inline-flex;align-items:center;gap:10px;margin-bottom:14px
+}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--accent)}
+.section-titre{font-size:clamp(1.8rem,4vw,2.7rem);color:var(--bleu-fonce);margin-bottom:18px}
+.section-intro{max-width:620px;color:var(--texte-doux);font-size:1.05rem;margin-bottom:54px}
+
+/* Boutons */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;cursor:pointer;border:none;
+  font-family:'Sora',sans-serif;font-weight:600;font-size:.95rem;
+  padding:14px 26px;border-radius:50px;transition:var(--trans);position:relative;overflow:hidden
+}
+.btn-primaire{background:var(--bleu);color:#fff;box-shadow:0 12px 26px -10px var(--bleu)}
+.btn-primaire:hover{transform:translateY(-3px);box-shadow:0 18px 34px -10px var(--bleu)}
+.btn-fantome{background:transparent;color:var(--bleu-fonce);border:1.5px solid var(--bordure)}
+.btn-fantome:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-3px)}
+.btn svg{width:18px;height:18px}
+
+/* ---------- 3. NAVIGATION ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;transition:var(--trans);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 0;
+}
+header.scrolled .nav{padding:12px 0}
+header.scrolled{
+  background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--glass-bordure);box-shadow:var(--ombre)
+}
+.logo{display:flex;align-items:center;gap:12px;font-size:1.05rem;color:var(--bleu-fonce);cursor:pointer}
+.logo-mark{
+  width:42px;height:42px;border-radius:11px;background:linear-gradient(135deg,var(--bleu-fonce),var(--bleu-clair));
+  display:grid;place-items:center;color:#fff;font-family:'Sora';font-weight:800;font-size:1rem;
+  box-shadow:var(--ombre);flex-shrink:0
+}
+html[data-theme="dark"] .logo-mark{color:#0a1424}
+.logo small{display:block;font-family:'IBM Plex Mono';font-weight:400;font-size:.62rem;letter-spacing:.18em;color:var(--texte-doux);text-transform:uppercase}
+.nav-liens{display:flex;align-items:center;gap:6px}
+.nav-liens a{
+  font-size:.92rem;font-weight:500;padding:9px 15px;border-radius:9px;color:var(--texte-doux);transition:var(--trans)
+}
+.nav-liens a:hover{color:var(--bleu-fonce);background:var(--gris-clair)}
+.nav-outils{display:flex;align-items:center;gap:10px}
+.icone-btn{
+  width:42px;height:42px;border-radius:11px;border:1px solid var(--bordure);background:var(--surface);
+  display:grid;place-items:center;cursor:pointer;color:var(--texte);transition:var(--trans)
+}
+.icone-btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.icone-btn svg{width:19px;height:19px}
+.lang-switch{
+  display:flex;border:1px solid var(--bordure);border-radius:11px;overflow:hidden;background:var(--surface);font-family:'IBM Plex Mono'
+}
+.lang-switch button{
+  border:none;background:transparent;cursor:pointer;padding:9px 12px;font-size:.78rem;font-weight:600;color:var(--texte-doux);transition:var(--trans)
+}
+.lang-switch button.actif{background:var(--bleu);color:#fff}
+.burger{display:none}
+
+/* ---------- 4. HERO ---------- */
+.hero{padding-top:160px;padding-bottom:80px;min-height:100vh;display:flex;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;width:100%}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--bordure);
+  padding:8px 16px;border-radius:50px;font-size:.82rem;color:var(--texte-doux);box-shadow:var(--ombre);margin-bottom:26px
+}
+.pastille{width:9px;height:9px;border-radius:50%;background:#2bb673;box-shadow:0 0 0 4px rgba(43,182,115,.2)}
+.hero h1{font-size:clamp(2.3rem,5.6vw,4rem);color:var(--bleu-fonce);margin-bottom:8px}
+.hero h1 .accentue{
+  background:linear-gradient(120deg,var(--bleu),var(--bleu-clair));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent
+}
+.hero-sous{font-family:'IBM Plex Mono';font-size:1.05rem;color:var(--accent);font-weight:500;margin-bottom:24px;letter-spacing:.01em}
+.hero p.lead{font-size:1.1rem;color:var(--texte-doux);max-width:520px;margin-bottom:34px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero-mini-stats{display:flex;gap:34px;margin-top:46px;flex-wrap:wrap}
+.hero-mini-stats div span{display:block;font-family:'Sora';font-weight:800;font-size:1.8rem;color:var(--bleu-fonce)}
+.hero-mini-stats div small{color:var(--texte-doux);font-size:.85rem}
+
+/* Illustration technique abstraite (SVG) */
+.hero-visuel{position:relative}
+.hero-visuel .carte-visuel{
+  background:var(--surface);border:1px solid var(--bordure);border-radius:24px;padding:26px;box-shadow:var(--ombre-forte);position:relative;overflow:hidden
+}
+.hero-visuel .carte-visuel::after{
+  content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 10%,rgba(47,116,192,.12),transparent 55%);pointer-events:none
+}
+.svg-anim line,.svg-anim path,.svg-anim rect,.svg-anim circle{vector-effect:non-scaling-stroke}
+.draw{stroke-dasharray:1000;stroke-dashoffset:1000;animation:dessiner 2.6s ease forwards}
+@keyframes dessiner{to{stroke-dashoffset:0}}
+.flotte{animation:flotter 6s ease-in-out infinite}
+@keyframes flotter{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.tag-flottant{
+  position:absolute;background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--glass-bordure);
+  border-radius:14px;padding:12px 16px;box-shadow:var(--ombre);font-family:'IBM Plex Mono';font-size:.8rem
+}
+.tag-flottant b{color:var(--bleu-fonce);font-family:'Sora'}
+.tag-1{top:-18px;right:30px}
+.tag-2{bottom:-20px;left:18px}
+
+/* ---------- 5. À PROPOS ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.about-texte p{color:var(--texte-doux);margin-bottom:18px}
+.cv-lien{display:inline-flex;align-items:center;gap:10px;margin-top:8px;font-weight:600;color:var(--bleu);border-bottom:2px solid transparent;transition:var(--trans);padding-bottom:3px}
+.cv-lien:hover{border-color:var(--bleu);gap:14px}
+
+.bloc-titre{font-family:'IBM Plex Mono';font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:30px 0 16px}
+/* Timeline expérience */
+.timeline{position:relative;padding-left:26px}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--bordure)}
+.tl-item{position:relative;padding-bottom:26px}
+.tl-item::before{content:"";position:absolute;left:-26px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--bleu);border:3px solid var(--bg);box-shadow:0 0 0 2px var(--bleu)}
+.tl-item h4{font-size:1.02rem;color:var(--bleu-fonce)}
+.tl-item .periode{font-family:'IBM Plex Mono';font-size:.8rem;color:var(--accent);margin-bottom:3px}
+.tl-item p{font-size:.9rem;color:var(--texte-doux)}
+/* Compétences */
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:8px}
+.skill-chip{
+  background:var(--surface);border:1px solid var(--bordure);border-radius:50px;padding:9px 17px;font-size:.88rem;
+  font-weight:500;transition:var(--trans);cursor:default
+}
+.skill-chip:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+/* Logiciels avec barre */
+.soft{margin-bottom:18px}
+.soft-head{display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:7px}
+.soft-head .niveau{font-family:'IBM Plex Mono';color:var(--texte-doux)}
+.barre{height:8px;border-radius:50px;background:var(--gris-clair);overflow:hidden}
+.barre span{display:block;height:100%;border-radius:50px;background:linear-gradient(90deg,var(--bleu),var(--bleu-clair));width:0;transition:width 1.4s cubic-bezier(.22,.61,.36,1)}
+
+/* Stats animées */
+.stats-bande{margin-top:30px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat-carte{
+  background:var(--surface);border:1px solid var(--bordure);border-radius:var(--rayon);padding:28px 22px;text-align:center;
+  box-shadow:var(--ombre);transition:var(--trans)
+}
+.stat-carte:hover{transform:translateY(-5px);box-shadow:var(--ombre-forte)}
+.stat-carte .nombre{font-family:'Sora';font-weight:800;font-size:2.6rem;color:var(--bleu-fonce);line-height:1}
+.stat-carte .nombre small{font-size:1.4rem;color:var(--accent)}
+.stat-carte p{font-size:.85rem;color:var(--texte-doux);margin-top:8px}
+
+/* ---------- 6. PROJETS ---------- */
+.filtres{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px}
+.filtre-btn{
+  background:var(--surface);border:1px solid var(--bordure);border-radius:50px;padding:10px 20px;cursor:pointer;
+  font-family:'IBM Plex Sans';font-size:.88rem;font-weight:500;color:var(--texte-doux);transition:var(--trans)
+}
+.filtre-btn:hover{border-color:var(--accent);color:var(--accent)}
+.filtre-btn.actif{background:var(--bleu);color:#fff;border-color:var(--bleu)}
+.projets-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.projet{
+  background:var(--surface);border:1px solid var(--bordure);border-radius:var(--rayon);overflow:hidden;
+  box-shadow:var(--ombre);transition:transform .5s cubic-bezier(.22,.61,.36,1),box-shadow .5s,opacity .4s;display:flex;flex-direction:column
+}
+.projet:hover{transform:translateY(-8px);box-shadow:var(--ombre-forte)}
+.projet.cache{display:none}
+.projet-img{height:180px;position:relative;overflow:hidden;background:var(--bleu-fonce)}
+.projet-img svg{position:absolute;inset:0;width:100%;height:100%}
+.projet-tag{
+  position:absolute;top:14px;left:14px;z-index:2;background:var(--glass);backdrop-filter:blur(8px);
+  border:1px solid var(--glass-bordure);padding:5px 12px;border-radius:50px;font-size:.72rem;font-family:'IBM Plex Mono';color:#fff
+}
+.projet-corps{padding:22px;flex:1;display:flex;flex-direction:column}
+.projet-corps h3{font-size:1.18rem;color:var(--bleu-fonce);margin-bottom:4px}
+.projet-meta{font-family:'IBM Plex Mono';font-size:.78rem;color:var(--accent);margin-bottom:12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.projet-corps p{font-size:.9rem;color:var(--texte-doux);margin-bottom:18px;flex:1}
+.projet-soft{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.soft-pill{font-size:.72rem;background:var(--gris-clair);color:var(--texte-doux);padding:4px 10px;border-radius:50px;font-family:'IBM Plex Mono'}
+.projet-actions{display:flex;gap:10px}
+.projet-actions .btn{padding:10px 16px;font-size:.82rem;flex:1;justify-content:center}
+
+/* ---------- 7. BIBLIOTHÈQUE ---------- */
+.biblio{background:var(--surface-2)}
+html[data-theme="dark"] .biblio{background:#0c1729}
+.biblio-barre{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px;align-items:center}
+.recherche{flex:1;min-width:240px;position:relative}
+.recherche input{
+  width:100%;padding:14px 16px 14px 46px;border:1px solid var(--bordure);border-radius:var(--rayon-sm);
+  background:var(--surface);color:var(--texte);font-family:'IBM Plex Sans';font-size:.95rem;transition:var(--trans)
+}
+.recherche input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(47,116,192,.12)}
+.recherche svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--texte-doux)}
+.biblio-table{display:flex;flex-direction:column;gap:12px}
+.doc-ligne{
+  display:grid;grid-template-columns:auto 1fr auto auto;gap:18px;align-items:center;
+  background:var(--surface);border:1px solid var(--bordure);border-radius:var(--rayon-sm);padding:16px 20px;transition:var(--trans)
+}
+.doc-ligne:hover{border-color:var(--accent);transform:translateX(4px);box-shadow:var(--ombre)}
+.doc-ligne.cache{display:none}
+.doc-icone{width:44px;height:44px;border-radius:11px;background:var(--gris-clair);display:grid;place-items:center;color:var(--bleu);flex-shrink:0}
+.doc-icone svg{width:22px;height:22px}
+.doc-info h4{font-size:1rem;color:var(--bleu-fonce);font-family:'Sora';font-weight:600}
+.doc-info span{font-size:.82rem;color:var(--texte-doux)}
+.doc-cat{font-family:'IBM Plex Mono';font-size:.74rem;padding:5px 11px;border-radius:50px;background:var(--gris-clair);color:var(--bleu);white-space:nowrap}
+.doc-actions{display:flex;gap:8px}
+.doc-actions button{
+  width:40px;height:40px;border-radius:10px;border:1px solid var(--bordure);background:var(--surface);
+  cursor:pointer;color:var(--texte-doux);display:grid;place-items:center;transition:var(--trans)
+}
+.doc-actions button:hover{border-color:var(--accent);color:var(--accent)}
+.doc-actions svg{width:18px;height:18px}
+.vide{text-align:center;color:var(--texte-doux);padding:40px;font-family:'IBM Plex Mono'}
+
+/* ---------- 8. SERVICES ---------- */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service{
+  background:var(--surface);border:1px solid var(--bordure);border-radius:var(--rayon);padding:32px 26px;
+  box-shadow:var(--ombre);transition:var(--trans);position:relative;overflow:hidden
+}
+.service::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--bleu),var(--bleu-clair));transform:scaleX(0);transform-origin:left;transition:var(--trans)}
+.service:hover{transform:translateY(-6px);box-shadow:var(--ombre-forte)}
+.service:hover::before{transform:scaleX(1)}
+.service-icone{width:56px;height:56px;border-radius:15px;background:linear-gradient(135deg,var(--bleu-fonce),var(--bleu));display:grid;place-items:center;color:#fff;margin-bottom:20px}
+html[data-theme="dark"] .service-icone{color:#0a1424}
+.service-icone svg{width:27px;height:27px}
+.service h3{font-size:1.18rem;color:var(--bleu-fonce);margin-bottom:10px}
+.service p{font-size:.92rem;color:var(--texte-doux)}
+
+/* ---------- 9. BLOG ---------- */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.article{
+  background:var(--surface);border:1px solid var(--bordure);border-radius:var(--rayon);overflow:hidden;
+  box-shadow:var(--ombre);transition:var(--trans);cursor:pointer;display:flex;flex-direction:column
+}
+.article:hover{transform:translateY(-6px);box-shadow:var(--ombre-forte)}
+.article-img{height:160px;position:relative;overflow:hidden;background:var(--bleu-fonce)}
+.article-img svg{position:absolute;inset:0;width:100%;height:100%}
+.article-corps{padding:24px}
+.article-date{font-family:'IBM Plex Mono';font-size:.76rem;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
+.article h3{font-size:1.14rem;color:var(--bleu-fonce);margin-bottom:10px;line-height:1.3}
+.article p{font-size:.9rem;color:var(--texte-doux);margin-bottom:14px}
+.article .lire{font-weight:600;color:var(--bleu);font-size:.88rem;display:inline-flex;align-items:center;gap:7px;transition:var(--trans)}
+.article:hover .lire{gap:11px}
+
+/* ---------- 10. CONTACT ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:start}
+.contact-form{background:var(--surface);border:1px solid var(--bordure);border-radius:var(--rayon);padding:34px;box-shadow:var(--ombre)}
+.champ{margin-bottom:18px}
+.champ label{display:block;font-size:.85rem;font-weight:500;margin-bottom:7px;color:var(--bleu-fonce)}
+.champ input,.champ textarea{
+  width:100%;padding:13px 16px;border:1px solid var(--bordure);border-radius:var(--rayon-sm);
+  background:var(--bg);color:var(--texte);font-family:'IBM Plex Sans';font-size:.95rem;transition:var(--trans)
+}
+.champ input:focus,.champ textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(47,116,192,.12)}
+.champ textarea{resize:vertical;min-height:120px}
+.form-msg{margin-top:14px;font-size:.9rem;font-weight:500;display:none}
+.form-msg.ok{display:block;color:#2bb673}
+.contact-infos .info-ligne{
+  display:flex;align-items:center;gap:18px;background:var(--surface);border:1px solid var(--bordure);
+  border-radius:var(--rayon-sm);padding:18px 20px;margin-bottom:14px;transition:var(--trans)
+}
+.contact-infos .info-ligne:hover{border-color:var(--accent);transform:translateX(4px)}
+.info-icone{width:48px;height:48px;border-radius:12px;background:var(--gris-clair);display:grid;place-items:center;color:var(--bleu);flex-shrink:0}
+.info-icone svg{width:22px;height:22px}
+.info-ligne small{display:block;font-size:.78rem;color:var(--texte-doux)}
+.info-ligne strong{font-family:'IBM Plex Mono';font-size:.98rem;color:var(--bleu-fonce);font-weight:500}
+.socials{display:flex;gap:12px;margin-top:24px}
+.social{
+  width:50px;height:50px;border-radius:13px;border:1px solid var(--bordure);background:var(--surface);
+  display:grid;place-items:center;color:var(--texte);transition:var(--trans)
+}
+.social:hover{transform:translateY(-4px);color:#fff;border-color:transparent}
+.social.wa:hover{background:#25d366}
+.social.li:hover{background:#0a66c2}
+.social.mail:hover{background:var(--bleu)}
+.social svg{width:22px;height:22px}
+
+/* ---------- 11. FOOTER ---------- */
+footer{background:var(--bleu-fonce);color:#cdd9e8;padding:60px 0 26px;margin-top:30px}
+html[data-theme="dark"] footer{background:#060e1c;border-top:1px solid var(--bordure)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer .logo-mark{background:linear-gradient(135deg,#fff,#9fc4f0);color:var(--bleu-fonce)}
+footer .logo{color:#fff}
+footer .logo small{color:#8ba3bf}
+footer p{font-size:.9rem;color:#9fb4cc;max-width:300px;margin-top:16px}
+.footer-col h4{font-size:.85rem;text-transform:uppercase;letter-spacing:.12em;color:#fff;margin-bottom:18px;font-family:'IBM Plex Mono';font-weight:500}
+.footer-col a{display:block;font-size:.9rem;color:#9fb4cc;padding:6px 0;transition:var(--trans)}
+.footer-col a:hover{color:#fff;padding-left:6px}
+.footer-bas{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.85rem;color:#8ba3bf}
+
+/* ---------- 12. MODALE / LECTEUR PDF ---------- */
+.modale{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:20px}
+.modale.ouvert{display:flex}
+.modale-fond{position:absolute;inset:0;background:rgba(8,18,33,.6);backdrop-filter:blur(6px);animation:fade .3s}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.modale-boite{
+  position:relative;background:var(--surface);border-radius:var(--rayon);width:100%;max-width:820px;max-height:90vh;
+  display:flex;flex-direction:column;box-shadow:var(--ombre-forte);overflow:hidden;animation:monte .4s cubic-bezier(.22,.61,.36,1)
+}
+@keyframes monte{from{opacity:0;transform:translateY(30px) scale(.98)}to{opacity:1;transform:none}}
+.modale-tete{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid var(--bordure)}
+.modale-tete h3{font-size:1.1rem;color:var(--bleu-fonce)}
+.modale-fermer{width:38px;height:38px;border-radius:10px;border:1px solid var(--bordure);background:var(--surface);cursor:pointer;display:grid;place-items:center;color:var(--texte);transition:var(--trans)}
+.modale-fermer:hover{border-color:#e0506b;color:#e0506b}
+.modale-corps{padding:0;overflow:auto;flex:1;min-height:420px;background:var(--gris-clair)}
+.modale-corps iframe{width:100%;height:60vh;border:none;background:#fff}
+.modale-pied{padding:16px 24px;border-top:1px solid var(--bordure);display:flex;justify-content:flex-end;gap:10px}
+
+/* Bouton retour haut */
+#haut{
+  position:fixed;bottom:26px;right:26px;width:48px;height:48px;border-radius:50%;background:var(--bleu);color:#fff;
+  border:none;cursor:pointer;display:grid;place-items:center;box-shadow:var(--ombre-forte);opacity:0;visibility:hidden;
+  transform:translateY(20px);transition:var(--trans);z-index:90
+}
+#haut.visible{opacity:1;visibility:visible;transform:none}
+#haut svg{width:22px;height:22px}
+
+/* Bouton WhatsApp flottant */
+.wa-flottant{
+  position:fixed;bottom:26px;left:26px;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;
+  display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.6);z-index:90;transition:var(--trans);
+  animation:pulseWa 2.4s infinite
+}
+.wa-flottant:hover{transform:scale(1.08)}
+@keyframes pulseWa{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.wa-flottant svg{width:30px;height:30px}
+
+/* ---------- 13. ANIMATIONS AU SCROLL ---------- */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1)}
+.reveal.vu{opacity:1;transform:none}
+.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}.reveal.d4{transition-delay:.4s}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:980px){
+  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:46px}
+  .hero-visuel{order:-1;max-width:480px;margin:0 auto}
+  .projets-grid,.services-grid,.blog-grid{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  section{padding:70px 0}
+  .nav-liens{
+    position:fixed;top:0;right:-100%;width:78%;max-width:320px;height:100vh;flex-direction:column;align-items:flex-start;
+    background:var(--surface);padding:90px 26px;gap:6px;box-shadow:var(--ombre-forte);transition:right .4s cubic-bezier(.22,.61,.36,1);z-index:99
+  }
+  .nav-liens.ouvert{right:0}
+  .nav-liens a{width:100%;font-size:1.05rem;padding:13px 16px}
+  .burger{display:grid;place-items:center}
+  .projets-grid,.services-grid,.blog-grid,.footer-grid,.stats-grid{grid-template-columns:1fr}
+  .doc-ligne{grid-template-columns:auto 1fr;gap:12px}
+  .doc-cat{grid-column:2;justify-self:start;margin-top:4px}
+  .doc-actions{grid-column:2;justify-self:start}
+  .hero-mini-stats{gap:24px}
+  .footer-bas{flex-direction:column;text-align:center}
+  .nav-outils .lang-switch{display:flex}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<header id="header">
+  <div class="wrap nav">
+    <div class="logo" onclick="document.getElementById('accueil').scrollIntoView()">
+      <div class="logo-mark">AFA</div>
+      <div>SANOU A. F. Alain
+        <small data-fr="Ingénieur Structures" data-en="Structural Engineer">Ingénieur Structures</small>
+      </div>
+    </div>
+
+    <nav class="nav-liens" id="menu">
+      <a href="#accueil" data-fr="Accueil" data-en="Home">Accueil</a>
+      <a href="#apropos" data-fr="À propos" data-en="About">À propos</a>
+      <a href="#projets" data-fr="Projets" data-en="Projects">Projets</a>
+      <a href="#biblio" data-fr="Bibliothèque" data-en="Library">Bibliothèque</a>
+      <a href="#services" data-fr="Services" data-en="Services">Services</a>
+      <a href="#blog" data-fr="Blog" data-en="Blog">Blog</a>
+      <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+    </nav>
+
+    <div class="nav-outils">
+      <div class="lang-switch">
+        <button id="lang-fr" class="actif" onclick="setLang('fr')">FR</button>
+        <button id="lang-en" onclick="setLang('en')">EN</button>
+      </div>
+      <button class="icone-btn" id="theme-btn" onclick="toggleTheme()" aria-label="Mode sombre">
+        <svg id="ico-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="icone-btn burger" id="burger" onclick="toggleMenu()" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO / ACCUEIL ================= -->
+<section class="hero" id="accueil">
+  <div class="wrap hero-grid">
+    <div class="hero-texte">
+      <div class="hero-badge reveal">
+        <span class="pastille"></span>
+        <span data-fr="Disponible pour vos projets de structures" data-en="Available for your structural projects">Disponible pour vos projets de structures</span>
+      </div>
+      <h1 class="reveal d1">SANOU Antoine<br><span class="accentue">Franck Alain</span></h1>
+      <p class="hero-sous reveal d2" data-fr="Ingénieur Génie Civil — Calcul de Structures" data-en="Civil Engineer — Structural Design">Ingénieur Génie Civil — Calcul de Structures</p>
+      <p class="lead reveal d2" data-fr="Conception et dimensionnement de structures en béton armé, notes de calcul détaillées, plans d'exécution et supervision de chantiers. Une bibliothèque technique au service de vos projets, conforme BAEL 91 et Eurocode 2." data-en="Design and sizing of reinforced concrete structures, detailed calculation notes, execution drawings and site supervision. A technical library serving your projects, compliant with BAEL 91 and Eurocode 2.">Conception et dimensionnement de structures en béton armé, notes de calcul détaillées, plans d'exécution et supervision de chantiers. Une bibliothèque technique au service de vos projets, conforme BAEL 91 et Eurocode 2.</p>
+      <div class="hero-actions reveal d3">
+        <a href="#projets" class="btn btn-primaire" data-fr="Voir les projets" data-en="View projects">Voir les projets
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-fantome" data-fr="Me contacter" data-en="Contact me">Me contacter</a>
+      </div>
+      <div class="hero-mini-stats reveal d4">
+        <div><span class="compteur" data-cible="20" data-suffixe="+">0</span><small data-fr="Notes de calcul" data-en="Calculation notes">Notes de calcul</small></div>
+        <div><span class="compteur" data-cible="4" data-suffixe="+">0</span><small data-fr="Ans d'expérience" data-en="Years of experience">Ans d'expérience</small></div>
+        <div><span class="compteur" data-cible="3" data-suffixe="">0</span><small data-fr="Logiciels maîtrisés" data-en="Mastered software">Logiciels maîtrisés</small></div>
+      </div>
+    </div>
+
+    <!-- Illustration technique abstraite -->
+    <div class="hero-visuel reveal d2">
+      <div class="carte-visuel flotte">
+        <svg class="svg-anim" viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2f74c0"/><stop offset="1" stop-color="#0e2a47"/>
+            </linearGradient>
+          </defs>
+          <!-- Trame / portique structurel -->
+          <g stroke="url(#g1)" stroke-width="2.4" fill="none" opacity=".9">
+            <!-- poteaux -->
+            <line class="draw" x1="60" y1="40" x2="60" y2="290"/>
+            <line class="draw" x1="200" y1="40" x2="200" y2="290" style="animation-delay:.2s"/>
+            <line class="draw" x1="340" y1="40" x2="340" y2="290" style="animation-delay:.4s"/>
+            <!-- poutres -->
+            <line class="draw" x1="60" y1="40" x2="340" y2="40" style="animation-delay:.6s"/>
+            <line class="draw" x1="60" y1="120" x2="340" y2="120" style="animation-delay:.8s"/>
+            <line class="draw" x1="60" y1="200" x2="340" y2="200" style="animation-delay:1s"/>
+            <line class="draw" x1="60" y1="290" x2="340" y2="290" style="animation-delay:1.2s"/>
+            <!-- diagonale de contreventement -->
+            <line class="draw" x1="60" y1="200" x2="200" y2="120" style="animation-delay:1.4s" stroke-dasharray="6 6"/>
+            <line class="draw" x1="200" y1="200" x2="340" y2="120" style="animation-delay:1.5s" stroke-dasharray="6 6"/>
+          </g>
+          <!-- noeuds -->
+          <g fill="#2f74c0">
+            <circle cx="60" cy="40" r="5"/><circle cx="200" cy="40" r="5"/><circle cx="340" cy="40" r="5"/>
+            <circle cx="60" cy="120" r="5"/><circle cx="200" cy="120" r="5"/><circle cx="340" cy="120" r="5"/>
+            <circle cx="60" cy="200" r="5"/><circle cx="200" cy="200" r="5"/><circle cx="340" cy="200" r="5"/>
+            <circle cx="60" cy="290" r="6" fill="#0e2a47"/><circle cx="200" cy="290" r="6" fill="#0e2a47"/><circle cx="340" cy="290" r="6" fill="#0e2a47"/>
+          </g>
+          <!-- appuis (triangles) -->
+          <g fill="#0e2a47">
+            <path d="M52 290 L68 290 L60 304 Z"/><path d="M192 290 L208 290 L200 304 Z"/><path d="M332 290 L348 290 L340 304 Z"/>
+          </g>
+          <!-- ligne de cote -->
+          <g stroke="#5b6b7b" stroke-width="1" opacity=".6">
+            <line x1="60" y1="320" x2="340" y2="320"/>
+            <line x1="60" y1="314" x2="60" y2="326"/><line x1="340" y1="314" x2="340" y2="326"/>
+          </g>
+          <text x="200" y="336" text-anchor="middle" fill="#5b6b7b" font-family="monospace" font-size="11">portée L</text>
+        </svg>
+      </div>
+      <div class="tag-flottant tag-1 flotte" style="animation-delay:.5s"><b>BAEL 91</b> / EC2</div>
+      <div class="tag-flottant tag-2 flotte" style="animation-delay:1s"><span data-fr="Béton armé" data-en="Reinforced concrete">Béton armé</span><br><b>fc28 = 25 MPa</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= À PROPOS ================= -->
+<section id="apropos">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" data-fr="À propos" data-en="About">À propos</span>
+      <h2 class="section-titre" data-fr="L'ingénieur derrière les calculs" data-en="The engineer behind the numbers">L'ingénieur derrière les calculs</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-texte reveal">
+        <p data-fr="Ingénieur en Génie Civil basé à Ouagadougou, je conçois et vérifie des structures en béton armé pour des projets résidentiels, commerciaux et industriels. Mon travail allie rigueur réglementaire (BAEL 91 mod. 99, Eurocode 2) et pragmatisme de chantier." data-en="Civil engineer based in Ouagadougou, I design and verify reinforced concrete structures for residential, commercial and industrial projects. My work combines regulatory rigor (BAEL 91 mod. 99, Eurocode 2) with site pragmatism.">Ingénieur en Génie Civil basé à Ouagadougou, je conçois et vérifie des structures en béton armé pour des projets résidentiels, commerciaux et industriels. Mon travail allie rigueur réglementaire (BAEL 91 mod. 99, Eurocode 2) et pragmatisme de chantier.</p>
+        <p data-fr="Titulaire d'un Master Pro en Travaux Publics & Bâtiment, je produis des notes de calcul complètes, des descentes de charges, des plans d'exécution et assure la supervision technique sur site. J'interviens également dans la préfabrication d'éléments structurels." data-en="Holding a Professional Master's in Public Works & Building, I produce complete calculation notes, load descents, execution plans and provide technical site supervision. I also work in the prefabrication of structural elements.">Titulaire d'un Master Pro en Travaux Publics & Bâtiment, je produis des notes de calcul complètes, des descentes de charges, des plans d'exécution et assure la supervision technique sur site. J'interviens également dans la préfabrication d'éléments structurels.</p>
+        <a class="cv-lien" href="https://www.canva.com/design/DAF5ryepu3M" target="_blank" rel="noopener" data-fr="Consulter mon CV complet" data-en="View my full résumé">Consulter mon CV complet
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg>
+        </a>
+
+        <div class="bloc-titre" data-fr="Compétences techniques" data-en="Technical skills">Compétences techniques</div>
+        <div class="skills">
+          <span class="skill-chip" data-fr="Béton armé" data-en="Reinforced concrete">Béton armé</span>
+          <span class="skill-chip" data-fr="Dimensionnement" data-en="Structural sizing">Dimensionnement</span>
+          <span class="skill-chip" data-fr="Supervision de chantiers" data-en="Site supervision">Supervision de chantiers</span>
+          <span class="skill-chip" data-fr="Préfabrication" data-en="Prefabrication">Préfabrication</span>
+          <span class="skill-chip" data-fr="Études techniques" data-en="Technical studies">Études techniques</span>
+          <span class="skill-chip" data-fr="Notes de calcul" data-en="Calculation notes">Notes de calcul</span>
+        </div>
+
+        <div class="bloc-titre" data-fr="Logiciels maîtrisés" data-en="Software mastery">Logiciels maîtrisés</div>
+        <div class="soft">
+          <div class="soft-head"><span>Arche Ossature</span><span class="niveau" data-fr="Avancé" data-en="Advanced">Avancé</span></div>
+          <div class="barre"><span data-niveau="92"></span></div>
+        </div>
+        <div class="soft">
+          <div class="soft-head"><span>Robot Structural Analysis</span><span class="niveau" data-fr="Avancé" data-en="Advanced">Avancé</span></div>
+          <div class="barre"><span data-niveau="88"></span></div>
+        </div>
+        <div class="soft">
+          <div class="soft-head"><span>AutoCAD</span><span class="niveau" data-fr="Intermédiaire" data-en="Intermediate">Intermédiaire</span></div>
+          <div class="barre"><span data-niveau="75"></span></div>
+        </div>
+      </div>
+
+      <div class="about-exp reveal d2">
+        <div class="bloc-titre" data-fr="Parcours professionnel" data-en="Professional path">Parcours professionnel</div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="periode">2022 — <span data-fr="Présent" data-en="Present">Présent</span></div>
+            <h4 data-fr="Ingénieur Structures — Les Préfabriqués du Faso / Kanazoé" data-en="Structural Engineer — Les Préfabriqués du Faso / Kanazoé">Ingénieur Structures — Les Préfabriqués du Faso / Kanazoé</h4>
+            <p data-fr="Calcul de structures, notes de calcul, plans d'exécution et préfabrication d'éléments en béton armé." data-en="Structural design, calculation notes, execution drawings and prefabrication of reinforced concrete elements.">Calcul de structures, notes de calcul, plans d'exécution et préfabrication d'éléments en béton armé.</p>
+          </div>
+          <div class="tl-item">
+            <div class="periode">SOPROMA SARL</div>
+            <h4 data-fr="Chef de chantier" data-en="Site manager">Chef de chantier</h4>
+            <p data-fr="Pilotage de l'exécution, suivi technique et coordination des équipes sur site." data-en="Execution management, technical follow-up and on-site team coordination.">Pilotage de l'exécution, suivi technique et coordination des équipes sur site.</p>
+          </div>
+          <div class="tl-item">
+            <div class="periode">BTI</div>
+            <h4 data-fr="Superviseur" data-en="Supervisor">Superviseur</h4>
+            <p data-fr="Supervision des travaux et contrôle de conformité technique." data-en="Works supervision and technical compliance control.">Supervision des travaux et contrôle de conformité technique.</p>
+          </div>
+          <div class="tl-item">
+            <div class="periode">SEAD</div>
+            <h4 data-fr="Contrôleur" data-en="Controller">Contrôleur</h4>
+            <p data-fr="Contrôle qualité et vérification des ouvrages." data-en="Quality control and structural verification.">Contrôle qualité et vérification des ouvrages.</p>
+          </div>
+          <div class="tl-item">
+            <div class="periode">ESTPO — 2017 / 2019</div>
+            <h4 data-fr="Licence & Master Pro Travaux Publics-Bâtiment" data-en="Bachelor & Professional Master — Public Works & Building">Licence & Master Pro Travaux Publics-Bâtiment</h4>
+            <p data-fr="Formation supérieure en génie civil." data-en="Higher education in civil engineering.">Formation supérieure en génie civil.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats animées -->
+    <div class="stats-bande reveal">
+      <div class="stats-grid">
+        <div class="stat-carte"><div class="nombre"><span class="compteur" data-cible="20">0</span><small>+</small></div><p data-fr="Notes de calcul produites" data-en="Calculation notes produced">Notes de calcul produites</p></div>
+        <div class="stat-carte"><div class="nombre"><span class="compteur" data-cible="15">0</span><small>+</small></div><p data-fr="Projets structurels" data-en="Structural projects">Projets structurels</p></div>
+        <div class="stat-carte"><div class="nombre"><span class="compteur" data-cible="4">0</span><small></small></div><p data-fr="Entreprises collaborées" data-en="Companies collaborated">Entreprises collaborées</p></div>
+        <div class="stat-carte"><div class="nombre"><span class="compteur" data-cible="100">0</span><small>%</small></div><p data-fr="Conformité réglementaire" data-en="Regulatory compliance">Conformité réglementaire</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJETS ================= -->
+<section id="projets">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" data-fr="Réalisations" data-en="Portfolio">Réalisations</span>
+      <h2 class="section-titre" data-fr="Projets de structures" data-en="Structural projects">Projets de structures</h2>
+      <p class="section-intro" data-fr="Une sélection de projets calculés et modélisés, du bâtiment résidentiel à la charpente métallique industrielle." data-en="A selection of designed and modeled projects, from residential buildings to industrial steel framing.">Une sélection de projets calculés et modélisés, du bâtiment résidentiel à la charpente métallique industrielle.</p>
+    </div>
+
+    <!-- Filtres dynamiques -->
+    <div class="filtres reveal" id="filtres-projets">
+      <button class="filtre-btn actif" data-filtre="tous" data-fr="Tous" data-en="All">Tous</button>
+      <button class="filtre-btn" data-filtre="residentiel" data-fr="Résidentiel" data-en="Residential">Résidentiel</button>
+      <button class="filtre-btn" data-filtre="commercial" data-fr="Commercial" data-en="Commercial">Commercial</button>
+      <button class="filtre-btn" data-filtre="prefab" data-fr="Préfabriqué" data-en="Prefab">Préfabriqué</button>
+      <button class="filtre-btn" data-filtre="industriel" data-fr="Industriel" data-en="Industrial">Industriel</button>
+    </div>
+
+    <div class="projets-grid" id="projets-grid"><!-- injecté par JS --></div>
+  </div>
+</section>
+
+<!-- ================= BIBLIOTHÈQUE TECHNIQUE ================= -->
+<section id="biblio" class="biblio">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" data-fr="Ressources" data-en="Resources">Ressources</span>
+      <h2 class="section-titre" data-fr="Bibliothèque technique" data-en="Technical library">Bibliothèque technique</h2>
+      <p class="section-intro" data-fr="Notes de calcul, plans d'exécution, descentes de charges et détails de ferraillage — recherchez, filtrez, consultez et téléchargez." data-en="Calculation notes, execution plans, load descents and reinforcement details — search, filter, view and download.">Notes de calcul, plans d'exécution, descentes de charges et détails de ferraillage — recherchez, filtrez, consultez et téléchargez.</p>
+    </div>
+
+    <div class="biblio-barre reveal">
+      <div class="recherche">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="recherche-input" placeholder="Rechercher un document..." data-fr-ph="Rechercher un document..." data-en-ph="Search a document...">
+      </div>
+    </div>
+    <div class="filtres reveal" id="filtres-biblio">
+      <button class="filtre-btn actif" data-cat="tous" data-fr="Tous" data-en="All">Tous</button>
+      <button class="filtre-btn" data-cat="note" data-fr="Notes de calcul" data-en="Calculation notes">Notes de calcul</button>
+      <button class="filtre-btn" data-cat="plan" data-fr="Plans d'exécution" data-en="Execution plans">Plans d'exécution</button>
+      <button class="filtre-btn" data-cat="charge" data-fr="Descentes de charges" data-en="Load descents">Descentes de charges</button>
+      <button class="filtre-btn" data-cat="ferraillage" data-fr="Ferraillage" data-en="Reinforcement">Ferraillage</button>
+    </div>
+
+    <div class="biblio-table reveal" id="biblio-table"><!-- injecté par JS --></div>
+    <p class="vide" id="biblio-vide" style="display:none" data-fr="Aucun document ne correspond à votre recherche." data-en="No document matches your search.">Aucun document ne correspond à votre recherche.</p>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" data-fr="Prestations" data-en="What I do">Prestations</span>
+      <h2 class="section-titre" data-fr="Services proposés" data-en="Services offered">Services proposés</h2>
+      <p class="section-intro" data-fr="Un accompagnement technique complet, de l'étude initiale au suivi de chantier." data-en="Complete technical support, from initial study to site monitoring.">Un accompagnement technique complet, de l'étude initiale au suivi de chantier.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service reveal">
+        <div class="service-icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg></div>
+        <h3 data-fr="Études de structure" data-en="Structural studies">Études de structure</h3>
+        <p data-fr="Conception et vérification complète d'ossatures béton armé : poteaux, poutres, planchers et fondations." data-en="Complete design and verification of reinforced concrete frames: columns, beams, slabs and foundations.">Conception et vérification complète d'ossatures béton armé : poteaux, poutres, planchers et fondations.</p>
+      </div>
+      <div class="service reveal d1">
+        <div class="service-icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3 data-fr="Contrôle de chantier" data-en="Site control">Contrôle de chantier</h3>
+        <p data-fr="Supervision technique, vérification de conformité et suivi de l'exécution des ouvrages." data-en="Technical supervision, compliance verification and follow-up of works execution.">Supervision technique, vérification de conformité et suivi de l'exécution des ouvrages.</p>
+      </div>
+      <div class="service reveal d2">
+        <div class="service-icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10M18 20V4M6 20v-4"/></svg></div>
+        <h3 data-fr="Dimensionnement" data-en="Sizing">Dimensionnement</h3>
+        <p data-fr="Pré-dimensionnement et calcul des éléments porteurs selon BAEL 91 mod. 99 et Eurocode 2." data-en="Pre-sizing and calculation of load-bearing elements according to BAEL 91 mod. 99 and Eurocode 2.">Pré-dimensionnement et calcul des éléments porteurs selon BAEL 91 mod. 99 et Eurocode 2.</p>
+      </div>
+      <div class="service reveal">
+        <div class="service-icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
+        <h3 data-fr="Plans d'exécution" data-en="Execution plans">Plans d'exécution</h3>
+        <p data-fr="Production de plans de coffrage, de ferraillage et de détails techniques prêts pour le chantier." data-en="Production of formwork, reinforcement and technical detail drawings ready for the site.">Production de plans de coffrage, de ferraillage et de détails techniques prêts pour le chantier.</p>
+      </div>
+      <div class="service reveal d1">
+        <div class="service-icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10h-10z"/><path d="M12 2v10h10"/></svg></div>
+        <h3 data-fr="Assistance technique" data-en="Technical assistance">Assistance technique</h3>
+        <p data-fr="Conseil, expertise et accompagnement sur vos problématiques structurelles spécifiques." data-en="Advice, expertise and support on your specific structural challenges.">Conseil, expertise et accompagnement sur vos problématiques structurelles spécifiques.</p>
+      </div>
+      <div class="service reveal d2">
+        <div class="service-icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3 data-fr="Préfabrication" data-en="Prefabrication">Préfabrication</h3>
+        <p data-fr="Étude et calcul d'éléments préfabriqués en béton armé pour une construction optimisée." data-en="Study and calculation of precast reinforced concrete elements for optimized construction.">Étude et calcul d'éléments préfabriqués en béton armé pour une construction optimisée.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BLOG ================= -->
+<section id="blog">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" data-fr="Blog technique" data-en="Technical blog">Blog technique</span>
+      <h2 class="section-titre" data-fr="Articles & repères techniques" data-en="Articles & technical insights">Articles & repères techniques</h2>
+      <p class="section-intro" data-fr="Des explications claires sur les fondamentaux du calcul de structures." data-en="Clear explanations on the fundamentals of structural design.">Des explications claires sur les fondamentaux du calcul de structures.</p>
+    </div>
+
+    <div class="blog-grid">
+      <article class="article reveal" onclick="ouvrirPDF('Comment faire une descente de charges','How to compute a load descent', blogPdf[0])">
+        <div class="article-img"><svg viewBox="0 0 400 200"><rect width="400" height="200" fill="#0e2a47"/><g stroke="#2f74c0" stroke-width="2" fill="none" opacity=".8"><path d="M40 40h320M40 90h320M40 140h320"/><path d="M200 30v140"/><path d="M200 50l-12 18h24z" fill="#2f74c0"/><path d="M200 100l-12 18h24z" fill="#2f74c0"/></g></svg></div>
+        <div class="article-corps">
+          <div class="article-date">BAEL · 6 min</div>
+          <h3 data-fr="Comment faire une descente de charges" data-en="How to compute a load descent">Comment faire une descente de charges</h3>
+          <p data-fr="Méthode pas à pas pour cumuler les charges permanentes et d'exploitation, du plancher haut jusqu'aux semelles." data-en="Step-by-step method to accumulate dead and live loads, from the top slab down to the footings.">Méthode pas à pas pour cumuler les charges permanentes et d'exploitation, du plancher haut jusqu'aux semelles.</p>
+          <span class="lire" data-fr="Lire l'article" data-en="Read article">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </article>
+      <article class="article reveal d1" onclick="ouvrirPDF('BAEL 91 vs Eurocode 2','BAEL 91 vs Eurocode 2', blogPdf[1])">
+        <div class="article-img"><svg viewBox="0 0 400 200"><rect width="400" height="200" fill="#1c4e80"/><g fill="#fff" opacity=".9" font-family="monospace" font-weight="bold"><text x="90" y="115" font-size="40" text-anchor="middle">BAEL</text><text x="310" y="115" font-size="40" text-anchor="middle">EC2</text></g><line x1="200" y1="40" x2="200" y2="160" stroke="#fff" stroke-width="2" opacity=".5"/><text x="200" y="118" fill="#9fc4f0" font-size="26" text-anchor="middle" font-family="monospace">vs</text></svg></div>
+        <div class="article-corps">
+          <div class="article-date" data-fr="Normes · 8 min" data-en="Standards · 8 min">Normes · 8 min</div>
+          <h3 data-fr="BAEL 91 vs Eurocodes : que choisir ?" data-en="BAEL 91 vs Eurocodes: which to choose?">BAEL 91 vs Eurocodes : que choisir ?</h3>
+          <p data-fr="Comparaison des philosophies de calcul, des coefficients de sécurité et des cas d'usage de chaque référentiel." data-en="Comparison of design philosophies, safety factors and use cases of each standard.">Comparaison des philosophies de calcul, des coefficients de sécurité et des cas d'usage de chaque référentiel.</p>
+          <span class="lire" data-fr="Lire l'article" data-en="Read article">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </article>
+      <article class="article reveal d2" onclick="ouvrirPDF('Erreurs fréquentes en béton armé','Common mistakes in reinforced concrete', blogPdf[2])">
+        <div class="article-img"><svg viewBox="0 0 400 200"><rect width="400" height="200" fill="#0e2a47"/><circle cx="200" cy="100" r="46" fill="none" stroke="#e0a93b" stroke-width="5"/><path d="M200 74v34" stroke="#e0a93b" stroke-width="6" stroke-linecap="round"/><circle cx="200" cy="124" r="4" fill="#e0a93b"/></svg></div>
+        <div class="article-corps">
+          <div class="article-date" data-fr="Pratique · 5 min" data-en="Practice · 5 min">Pratique · 5 min</div>
+          <h3 data-fr="Erreurs fréquentes en béton armé" data-en="Common mistakes in reinforced concrete">Erreurs fréquentes en béton armé</h3>
+          <p data-fr="Enrobage insuffisant, mauvais ancrages, oubli des dispositions constructives : les pièges à éviter." data-en="Insufficient cover, poor anchoring, forgotten detailing rules: the pitfalls to avoid.">Enrobage insuffisant, mauvais ancrages, oubli des dispositions constructives : les pièges à éviter.</p>
+          <span class="lire" data-fr="Lire l'article" data-en="Read article">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" data-fr="Contact" data-en="Contact">Contact</span>
+      <h2 class="section-titre" data-fr="Discutons de votre projet" data-en="Let's discuss your project">Discutons de votre projet</h2>
+      <p class="section-intro" data-fr="Une structure à calculer, une note à produire ou un chantier à superviser ? Écrivez-moi." data-en="A structure to design, a note to produce or a site to supervise? Get in touch.">Une structure à calculer, une note à produire ou un chantier à superviser ? Écrivez-moi.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-form reveal">
+        <div class="champ">
+          <label data-fr="Nom complet" data-en="Full name">Nom complet</label>
+          <input type="text" id="c-nom" data-fr-ph="Votre nom" data-en-ph="Your name" placeholder="Votre nom">
+        </div>
+        <div class="champ">
+          <label>Email</label>
+          <input type="email" id="c-email" data-fr-ph="vous@exemple.com" data-en-ph="you@example.com" placeholder="vous@exemple.com">
+        </div>
+        <div class="champ">
+          <label data-fr="Sujet" data-en="Subject">Sujet</label>
+          <input type="text" id="c-sujet" data-fr-ph="Type de projet" data-en-ph="Project type" placeholder="Type de projet">
+        </div>
+        <div class="champ">
+          <label>Message</label>
+          <textarea id="c-msg" data-fr-ph="Décrivez votre besoin..." data-en-ph="Describe your needs..." placeholder="Décrivez votre besoin..."></textarea>
+        </div>
+        <button class="btn btn-primaire" style="width:100%;justify-content:center" onclick="envoyerForm()" data-fr="Envoyer le message" data-en="Send message">Envoyer le message</button>
+        <p class="form-msg" id="form-msg" data-fr="✓ Merci ! Votre messagerie va s'ouvrir pour finaliser l'envoi." data-en="✓ Thank you! Your email client will open to finalize sending.">✓ Merci ! Votre messagerie va s'ouvrir pour finaliser l'envoi.</p>
+      </div>
+
+      <div class="contact-infos reveal d1">
+        <a class="info-ligne" href="https://wa.me/22674240553" target="_blank" rel="noopener">
+          <div class="info-icone"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.1-.2.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3c-.2.2-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5 0 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg></div>
+          <div><small>WhatsApp</small><strong>+226 74 24 05 53</strong></div>
+        </a>
+        <a class="info-ligne" href="mailto:sanouafa@gmail.com">
+          <div class="info-icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></div>
+          <div><small>Email</small><strong>sanouafa@gmail.com</strong></div>
+        </a>
+        <a class="info-ligne" href="tel:+22674240553">
+          <div class="info-icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+          <div><small data-fr="Téléphone" data-en="Phone">Téléphone</small><strong>+226 74 24 05 53</strong></div>
+        </a>
+        <div class="info-ligne" style="cursor:default">
+          <div class="info-icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><small data-fr="Localisation" data-en="Location">Localisation</small><strong>Ouagadougou, Burkina Faso</strong></div>
+        </div>
+
+        <div class="socials">
+          <a class="social wa" href="https://wa.me/22674240553" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm4.4 12c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.1-.2.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3c-.2.2-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5 0 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg></a>
+          <a class="social li" href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM0 8h5v16H0zM7.5 8h4.8v2.2h.1c.7-1.3 2.3-2.6 4.7-2.6 5 0 5.9 3.3 5.9 7.6V24h-5v-7.4c0-1.8 0-4-2.5-4s-2.9 1.9-2.9 3.9V24h-5z"/></svg></a>
+          <a class="social mail" href="mailto:sanouafa@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo"><div class="logo-mark">AFA</div><div>SANOU A. F. Alain<small data-fr="Ingénieur Structures" data-en="Structural Engineer">Ingénieur Structures</small></div></div>
+        <p data-fr="Bureau d'études structures — calcul de béton armé, notes de calcul, plans d'exécution et supervision de chantiers à Ouagadougou et au-delà." data-en="Structural engineering office — reinforced concrete design, calculation notes, execution plans and site supervision in Ouagadougou and beyond.">Bureau d'études structures — calcul de béton armé, notes de calcul, plans d'exécution et supervision de chantiers à Ouagadougou et au-delà.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr="Navigation" data-en="Navigation">Navigation</h4>
+        <a href="#accueil" data-fr="Accueil" data-en="Home">Accueil</a>
+        <a href="#apropos" data-fr="À propos" data-en="About">À propos</a>
+        <a href="#projets" data-fr="Projets" data-en="Projects">Projets</a>
+        <a href="#biblio" data-fr="Bibliothèque" data-en="Library">Bibliothèque</a>
+        <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr="Contact" data-en="Contact">Contact</h4>
+        <a href="mailto:sanouafa@gmail.com">sanouafa@gmail.com</a>
+        <a href="tel:+22674240553">+226 74 24 05 53</a>
+        <a href="https://wa.me/22674240553" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.canva.com/design/DAF5ryepu3M" target="_blank" rel="noopener" data-fr="Mon CV" data-en="My résumé">Mon CV</a>
+      </div>
+    </div>
+    <div class="footer-bas">
+      <span>© <span id="annee"></span> SANOU Antoine Franck Alain. <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></span>
+      <span data-fr="Conçu avec rigueur — BAEL 91 mod. 99 / Eurocode 2" data-en="Designed with rigor — BAEL 91 mod. 99 / Eurocode 2">Conçu avec rigueur — BAEL 91 mod. 99 / Eurocode 2</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= MODALE / LECTEUR PDF ================= -->
+<div class="modale" id="modale">
+  <div class="modale-fond" onclick="fermerModale()"></div>
+  <div class="modale-boite">
+    <div class="modale-tete">
+      <h3 id="modale-titre">Document</h3>
+      <button class="modale-fermer" onclick="fermerModale()" aria-label="Fermer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="modale-corps"><iframe id="modale-iframe" title="Lecteur PDF"></iframe></div>
+    <div class="modale-pied">
+      <button class="btn btn-fantome" onclick="fermerModale()" data-fr="Fermer" data-en="Close">Fermer</button>
+      <a class="btn btn-primaire" id="modale-dl" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        <span data-fr="Télécharger" data-en="Download">Télécharger</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Boutons flottants -->
+<a class="wa-flottant" href="https://wa.me/22674240553" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm4.4 12c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.1-.2.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3c-.2.2-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5 0 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg>
+</a>
+<button id="haut" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Haut de page">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script>
+/* =========================================================================
+   SCRIPT — comportements du site
+   1. Données (projets, bibliothèque)
+   2. Rendu dynamique des cartes
+   3. Filtres & recherche
+   4. Générateur PDF (téléchargements fonctionnels)
+   5. Lecteur PDF (modale)
+   6. Bilingue FR/EN
+   7. Thème clair/sombre
+   8. Navigation (sticky, burger, scroll)
+   9. Animations au scroll & compteurs
+   10. Formulaire de contact
+   ========================================================================= */
+
+/* ---------- 1. DONNÉES PROJETS (basées sur des projets réels) ---------- */
+const projets = [
+  {
+    cat:"residentiel", tag:"Villa R+2",
+    titreFr:"Villa R+2 — M. Daouda KABORE", titreEn:"R+2 Villa — Mr. Daouda KABORE",
+    soft:["Arche Ossature","AutoCAD"], couleur:"#1c4e80",
+    descFr:"Ossature mixte avec salon de grande portée (~9,5 m), vide sur séjour, balcons en porte-à-faux (~92 m²) et terrasse. Pré-dimensionnement complet conforme BAEL/EC2.",
+    descEn:"Mixed frame with large-span living room (~9.5 m), double-height void, cantilevered balconies (~92 m²) and roof terrace. Full pre-sizing compliant with BAEL/EC2."
+  },
+  {
+    cat:"commercial", tag:"Immeuble R+4",
+    titreFr:"Immeuble commercial R+4 — SORGHO", titreEn:"R+4 Commercial Building — SORGHO",
+    soft:["Arche Ossature","AutoCAD"], couleur:"#0e2a47",
+    descFr:"Bâtiment commercial sur 5 niveaux : calcul des planchers, poteaux et fondations, descente de charges complète et plans d'exécution.",
+    descEn:"5-level commercial building: slab, column and foundation design, complete load descent and execution drawings."
+  },
+  {
+    cat:"residentiel", tag:"Immeuble R+2",
+    titreFr:"Immeuble résidentiel R+2 — DIABOUGA", titreEn:"R+2 Residential Building — DIABOUGA",
+    soft:["Arche Ossature","AutoCAD"], couleur:"#2f74c0",
+    descFr:"Immeuble d'habitation R+2 : modélisation Arche Ossature, note de calcul et plans de coffrage/ferraillage pour mission complète.",
+    descEn:"R+2 residential building: Arche Ossature modeling, calculation note and formwork/reinforcement drawings for full mission."
+  },
+  {
+    cat:"prefab", tag:"École préfabriquée",
+    titreFr:"École préfabriquée — Les Préfabriqués du Faso", titreEn:"Prefab School — Les Préfabriqués du Faso",
+    soft:["Arche Ossature","Robot"], couleur:"#1c4e80",
+    descFr:"Étude d'éléments préfabriqués en béton armé pour un bâtiment scolaire : poteaux, poutres et panneaux préfabriqués optimisés.",
+    descEn:"Study of precast reinforced concrete elements for a school building: optimized precast columns, beams and panels."
+  },
+  {
+    cat:"commercial", tag:"Bâtiment administratif",
+    titreFr:"Bâtiment administratif R+3", titreEn:"R+3 Administrative Building",
+    soft:["Robot","AutoCAD"], couleur:"#0e2a47",
+    descFr:"Immeuble de bureaux R+3 avec trame régulière : modélisation Robot Structural Analysis, vérifications ELU/ELS et plans d'exécution.",
+    descEn:"R+3 office building with regular grid: Robot Structural Analysis modeling, ULS/SLS checks and execution drawings."
+  },
+  {
+    cat:"industriel", tag:"Entrepôt métallique",
+    titreFr:"Entrepôt métallique — TOU", titreEn:"Steel Warehouse — TOU",
+    soft:["Robot","AutoCAD"], couleur:"#2f74c0",
+    descFr:"Charpente métallique industrielle : portiques, contreventements et calcul des assemblages. Modélisation Robot Structural Analysis.",
+    descEn:"Industrial steel framing: portal frames, bracing and connection design. Robot Structural Analysis modeling."
+  },
+  {
+    cat:"residentiel", tag:"Immeuble R+2",
+    titreFr:"Immeuble résidentiel R+2 — DARAKOUM", titreEn:"R+2 Residential Building — DARAKOUM",
+    soft:["Arche Ossature","AutoCAD"], couleur:"#1c4e80",
+    descFr:"Bâtiment résidentiel R+2 : calcul structurel complet et production des plans d'exécution pour réalisation.",
+    descEn:"R+2 residential building: complete structural design and production of execution drawings for construction."
+  },
+  {
+    cat:"residentiel", tag:"Piscine BA",
+    titreFr:"Piscine rectangulaire — Mme ZAGRÉ (DREAM STUDIO)", titreEn:"Rectangular Pool — Mrs. ZAGRÉ (DREAM STUDIO)",
+    soft:["BAEL 91 mod.99"], couleur:"#0e2a47",
+    descFr:"Note de calcul d'une piscine en béton armé (10 × 4 × 2 m) comparant trois méthodes de dimensionnement des voiles : console, bandes verticales et horizontales.",
+    descEn:"Calculation note for a reinforced concrete pool (10 × 4 × 2 m) comparing three wall design methods: cantilever, vertical strips and horizontal strips."
+  }
+];
+
+/* ---------- DONNÉES BIBLIOTHÈQUE ---------- */
+const docs = [
+  {cat:"note", titreFr:"Note de calcul — Villa R+2 KABORE", titreEn:"Calculation note — R+2 Villa KABORE", metaFr:"Béton armé · 42 pages", metaEn:"Reinforced concrete · 42 pages"},
+  {cat:"note", titreFr:"Note de calcul — Piscine BA 10×4×2", titreEn:"Calculation note — RC Pool 10×4×2", metaFr:"BAEL 91 mod.99 · 3 méthodes", metaEn:"BAEL 91 mod.99 · 3 methods"},
+  {cat:"charge", titreFr:"Descente de charges — Immeuble R+4 SORGHO", titreEn:"Load descent — R+4 Building SORGHO", metaFr:"5 niveaux · ELU/ELS", metaEn:"5 levels · ULS/SLS"},
+  {cat:"plan", titreFr:"Plan de coffrage — Plancher haut RDC", titreEn:"Formwork plan — Ground floor ceiling", metaFr:"Échelle 1:50 · DWG/PDF", metaEn:"Scale 1:50 · DWG/PDF"},
+  {cat:"ferraillage", titreFr:"Détail de ferraillage — Poutre principale", titreEn:"Reinforcement detail — Main beam", metaFr:"HA · ancrages & recouvrements", metaEn:"Rebar · anchoring & laps"},
+  {cat:"plan", titreFr:"Plan d'exécution — Fondations semelles isolées", titreEn:"Execution plan — Isolated footings", metaFr:"Implantation & coupes", metaEn:"Layout & sections"},
+  {cat:"ferraillage", titreFr:"Détail de ferraillage — Poteau de rive", titreEn:"Reinforcement detail — Edge column", metaFr:"Armatures longitudinales & cadres", metaEn:"Longitudinal bars & stirrups"},
+  {cat:"charge", titreFr:"Descente de charges — Villa R+2", titreEn:"Load descent — R+2 Villa", metaFr:"Charges G + Q cumulées", metaEn:"Cumulative G + Q loads"},
+  {cat:"note", titreFr:"Note de calcul — Entrepôt métallique TOU", titreEn:"Calculation note — Steel warehouse TOU", metaFr:"Portiques & assemblages", metaEn:"Portal frames & connections"},
+  {cat:"plan", titreFr:"Plan de ferraillage — Voile piscine", titreEn:"Reinforcement plan — Pool wall", metaFr:"Méthode bandes horizontales", metaEn:"Horizontal strip method"}
+];
+
+const libelleCat = {
+  note:{fr:"Note de calcul",en:"Calc. note"},
+  plan:{fr:"Plan d'exécution",en:"Execution plan"},
+  charge:{fr:"Descente de charges",en:"Load descent"},
+  ferraillage:{fr:"Ferraillage",en:"Reinforcement"}
+};
+
+let langue = "fr";
+
+/* ---------- ILLUSTRATIONS SVG génériques pour cartes projets ---------- */
+function svgProjet(couleur){
+  return `<svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice">
+    <rect width="400" height="200" fill="${couleur}"/>
+    <g stroke="rgba(255,255,255,.55)" stroke-width="1.6" fill="none">
+      <line x1="60" y1="30" x2="60" y2="175"/><line x1="160" y1="30" x2="160" y2="175"/>
+      <line x1="260" y1="30" x2="260" y2="175"/><line x1="345" y1="30" x2="345" y2="175"/>
+      <line x1="60" y1="30" x2="345" y2="30"/><line x1="60" y1="80" x2="345" y2="80"/>
+      <line x1="60" y1="130" x2="345" y2="130"/><line x1="60" y1="175" x2="345" y2="175"/>
+    </g>
+    <g fill="rgba(255,255,255,.85)">
+      <circle cx="60" cy="30" r="3.5"/><circle cx="160" cy="30" r="3.5"/><circle cx="260" cy="30" r="3.5"/><circle cx="345" cy="30" r="3.5"/>
+      <circle cx="60" cy="80" r="3.5"/><circle cx="160" cy="80" r="3.5"/><circle cx="260" cy="80" r="3.5"/><circle cx="345" cy="80" r="3.5"/>
+    </g>
+  </svg>`;
+}
+
+/* ---------- 2. RENDU DES CARTES PROJETS ---------- */
+function rendreProjets(){
+  const grid = document.getElementById("projets-grid");
+  grid.innerHTML = projets.map((p,i)=>`
+    <article class="projet reveal ${i%3===1?'d1':i%3===2?'d2':''}" data-cat="${p.cat}">
+      <div class="projet-img">${svgProjet(p.couleur)}<span class="projet-tag">${p.tag}</span></div>
+      <div class="projet-corps">
+        <h3 data-fr="${p.titreFr}" data-en="${p.titreEn}">${p.titreFr}</h3>
+        <div class="projet-meta"><span data-fr="Type · ${p.tag}" data-en="Type · ${p.tag}">Type · ${p.tag}</span></div>
+        <p data-fr="${p.descFr}" data-en="${p.descEn}">${p.descFr}</p>
+        <div class="projet-soft">${p.soft.map(s=>`<span class="soft-pill">${s}</span>`).join("")}</div>
+        <div class="projet-actions">
+          <button class="btn btn-fantome" onclick="ouvrirPDF('${p.titreFr.replace(/'/g,"\\'")}','${p.titreEn.replace(/'/g,"\\'")}', projetPdf(${i}))" data-fr="Voir détails" data-en="View details">Voir détails</button>
+          <button class="btn btn-primaire" onclick="telechargerPDF('${p.titreFr.replace(/'/g,"\\'")}', projetPdf(${i}))" data-fr="PDF" data-en="PDF">PDF</button>
+        </div>
+      </div>
+    </article>`).join("");
+  observerReveal();
+}
+
+/* ---------- RENDU BIBLIOTHÈQUE ---------- */
+function rendreDocs(){
+  const table = document.getElementById("biblio-table");
+  table.innerHTML = docs.map((d,i)=>`
+    <div class="doc-ligne" data-cat="${d.cat}" data-titre-fr="${d.titreFr.toLowerCase()}" data-titre-en="${d.titreEn.toLowerCase()}">
+      <div class="doc-icone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+      </div>
+      <div class="doc-info">
+        <h4 data-fr="${d.titreFr}" data-en="${d.titreEn}">${d.titreFr}</h4>
+        <span data-fr="${d.metaFr}" data-en="${d.metaEn}">${d.metaFr}</span>
+      </div>
+      <span class="doc-cat" data-fr="${libelleCat[d.cat].fr}" data-en="${libelleCat[d.cat].en}">${libelleCat[d.cat].fr}</span>
+      <div class="doc-actions">
+        <button onclick="ouvrirPDF('${d.titreFr.replace(/'/g,"\\'")}','${d.titreEn.replace(/'/g,"\\'")}', docPdf(${i}))" title="Aperçu" aria-label="Aperçu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </button>
+        <button onclick="telechargerPDF('${d.titreFr.replace(/'/g,"\\'")}', docPdf(${i}))" title="Télécharger" aria-label="Télécharger">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        </button>
+      </div>
+    </div>`).join("");
+}
+
+/* ---------- 3. FILTRES & RECHERCHE ---------- */
+// Projets
+function initFiltresProjets(){
+  document.querySelectorAll("#filtres-projets .filtre-btn").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      document.querySelectorAll("#filtres-projets .filtre-btn").forEach(b=>b.classList.remove("actif"));
+      btn.classList.add("actif");
+      const f = btn.dataset.filtre;
+      document.querySelectorAll("#projets-grid .projet").forEach(c=>{
+        const ok = (f==="tous"||c.dataset.cat===f);
+        c.classList.toggle("cache",!ok);
+      });
+    });
+  });
+}
+// Bibliothèque (filtre + recherche combinés)
+let catActive = "tous";
+function appliquerBiblio(){
+  const q = document.getElementById("recherche-input").value.toLowerCase().trim();
+  let visibles = 0;
+  document.querySelectorAll("#biblio-table .doc-ligne").forEach(l=>{
+    const catOk = (catActive==="tous"||l.dataset.cat===catActive);
+    const txt = l.dataset.titreFr+" "+l.dataset.titreEn;
+    const rechOk = (q===""||txt.includes(q));
+    const ok = catOk && rechOk;
+    l.classList.toggle("cache",!ok);
+    if(ok) visibles++;
+  });
+  document.getElementById("biblio-vide").style.display = visibles===0?"block":"none";
+}
+function initFiltresBiblio(){
+  document.querySelectorAll("#filtres-biblio .filtre-btn").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      document.querySelectorAll("#filtres-biblio .filtre-btn").forEach(b=>b.classList.remove("actif"));
+      btn.classList.add("actif");
+      catActive = btn.dataset.cat;
+      appliquerBiblio();
+    });
+  });
+  document.getElementById("recherche-input").addEventListener("input",appliquerBiblio);
+}
+
+/* ---------- 4. GÉNÉRATEUR PDF (téléchargements fonctionnels, hors-ligne) ----------
+   Construit un PDF minimal valide côté client, sans aucune librairie externe.
+   Le texte est normalisé en ASCII pour garantir des longueurs/octets corrects. */
+function asciiOnly(s){
+  return String(s).normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+    .replace(/[''']/g,"'").replace(/[""]/g,'"').replace(/[–—]/g,"-")
+    .replace(/[^\x20-\x7E]/g,"");
+}
+function makePdf(titre, lignes){
+  const esc = s => asciiOnly(s).replace(/\\/g,"\\\\").replace(/\(/g,"\\(").replace(/\)/g,"\\)");
+  let stream = `BT /F2 22 Tf 60 770 Td (${esc(titre)}) Tj ET\n`;
+  stream += `BT /F1 10 Tf 60 748 Td (SANOU Antoine Franck Alain - Ingenieur Genie Civil) Tj ET\n`;
+  stream += `0.18 0.45 0.75 RG 2 w 60 740 m 535 740 l S\n`;
+  let y = 712;
+  for(const ln of lignes){
+    stream += `BT /F1 12 Tf 60 ${y} Td (${esc(ln)}) Tj ET\n`;
+    y -= 22;
+  }
+  stream += `BT /F1 9 Tf 60 60 Td (Document de demonstration - sanouafa@gmail.com - +226 74 24 05 53) Tj ET\n`;
+
+  const objs = [
+    "<< /Type /Catalog /Pages 2 0 R >>",
+    "<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+    "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>",
+    `<< /Length ${stream.length} >>\nstream\n${stream}endstream`,
+    "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>",
+    "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>"
+  ];
+  let pdf = "%PDF-1.4\n";
+  const offsets = [];
+  objs.forEach((o,i)=>{ offsets.push(pdf.length); pdf += `${i+1} 0 obj\n${o}\nendobj\n`; });
+  const xref = pdf.length;
+  pdf += `xref\n0 ${objs.length+1}\n0000000000 65535 f \n`;
+  offsets.forEach(o=> pdf += String(o).padStart(10,"0")+" 00000 n \n");
+  pdf += `trailer\n<< /Size ${objs.length+1} /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF`;
+  return new Blob([pdf],{type:"application/pdf"});
+}
+
+// Contenus PDF par projet / document / article
+function projetPdf(i){
+  const p = projets[i];
+  return makePdf(langue==="fr"?p.titreFr:p.titreEn, langue==="fr"
+    ? ["Note de calcul structurelle","Type d'ouvrage : "+p.tag,"Logiciels : "+p.soft.join(", "),"","Reglements : BAEL 91 mod. 99 / Eurocode 2","","Descriptif :",p.descFr.slice(0,80),p.descFr.slice(80,160),"","Sommaire :","1. Hypotheses et donnees","2. Descente de charges","3. Dimensionnement ELU / ELS","4. Plans de ferraillage","5. Conclusion"]
+    : ["Structural calculation note","Structure type: "+p.tag,"Software: "+p.soft.join(", "),"","Standards: BAEL 91 mod. 99 / Eurocode 2","","Description:",p.descEn.slice(0,80),p.descEn.slice(80,160),"","Contents:","1. Assumptions and data","2. Load descent","3. ULS / SLS design","4. Reinforcement drawings","5. Conclusion"]);
+}
+function docPdf(i){
+  const d = docs[i];
+  return makePdf(langue==="fr"?d.titreFr:d.titreEn, langue==="fr"
+    ? ["Categorie : "+libelleCat[d.cat].fr, d.metaFr,"","Reglements : BAEL 91 mod. 99 / Eurocode 2","","Ce document fait partie de la bibliotheque technique","de SANOU Antoine Franck Alain.","","(Apercu de demonstration)"]
+    : ["Category: "+libelleCat[d.cat].en, d.metaEn,"","Standards: BAEL 91 mod. 99 / Eurocode 2","","This document is part of the technical library","of SANOU Antoine Franck Alain.","","(Demonstration preview)"]);
+}
+const blogTitres = [
+  {fr:"Comment faire une descente de charges",en:"How to compute a load descent"},
+  {fr:"BAEL 91 vs Eurocodes : que choisir ?",en:"BAEL 91 vs Eurocodes: which to choose?"},
+  {fr:"Erreurs frequentes en beton arme",en:"Common mistakes in reinforced concrete"}
+];
+const blogPdf = [0,1,2].map(i=>()=>makePdf(langue==="fr"?blogTitres[i].fr:blogTitres[i].en,
+  langue==="fr"?["Article technique","","Contenu de demonstration.","Consultez le site pour la version complete."]
+                :["Technical article","","Demonstration content.","See the site for the full version."]));
+
+/* ---------- 5. LECTEUR PDF (modale) ---------- */
+let urlCourante = null, nomCourant = "document.pdf";
+function ouvrirPDF(titreFr, titreEn, blobFn){
+  const blob = (typeof blobFn==="function")?blobFn():blobFn;
+  if(urlCourante) URL.revokeObjectURL(urlCourante);
+  urlCourante = URL.createObjectURL(blob);
+  nomCourant = asciiOnly(langue==="fr"?titreFr:titreEn).replace(/[^a-zA-Z0-9]+/g,"_")+".pdf";
+  document.getElementById("modale-titre").textContent = langue==="fr"?titreFr:titreEn;
+  document.getElementById("modale-iframe").src = urlCourante;
+  const dl = document.getElementById("modale-dl");
+  dl.href = urlCourante; dl.download = nomCourant;
+  document.getElementById("modale").classList.add("ouvert");
+  document.body.style.overflow = "hidden";
+}
+function fermerModale(){
+  document.getElementById("modale").classList.remove("ouvert");
+  document.getElementById("modale-iframe").src = "";
+  document.body.style.overflow = "";
+}
+document.addEventListener("keydown",e=>{ if(e.key==="Escape") fermerModale(); });
+
+// Téléchargement direct
+function telechargerPDF(titre, blobFn){
+  const blob = (typeof blobFn==="function")?blobFn():blobFn;
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = asciiOnly(titre).replace(/[^a-zA-Z0-9]+/g,"_")+".pdf";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
+
+/* ---------- 6. BILINGUE FR / EN ---------- */
+function setLang(l){
+  langue = l;
+  document.documentElement.lang = l;
+  document.getElementById("lang-fr").classList.toggle("actif",l==="fr");
+  document.getElementById("lang-en").classList.toggle("actif",l==="en");
+  // Textes
+  document.querySelectorAll("[data-fr]").forEach(el=>{
+    const v = el.getAttribute("data-"+l);
+    if(v!==null) el.textContent = v;
+  });
+  // Placeholders
+  document.querySelectorAll("[data-fr-ph]").forEach(el=>{
+    el.setAttribute("placeholder", el.getAttribute("data-"+l+"-ph"));
+  });
+}
+
+/* ---------- 7. THÈME CLAIR / SOMBRE ---------- */
+function toggleTheme(){
+  const html = document.documentElement;
+  const sombre = html.getAttribute("data-theme")==="dark";
+  html.setAttribute("data-theme", sombre?"light":"dark");
+  majIconeTheme(!sombre);
+}
+function majIconeTheme(sombre){
+  document.getElementById("theme-btn").innerHTML = sombre
+    ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'
+    : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+}
+
+/* ---------- 8. NAVIGATION ---------- */
+const header = document.getElementById("header");
+window.addEventListener("scroll",()=>{
+  header.classList.toggle("scrolled", window.scrollY>30);
+  document.getElementById("haut").classList.toggle("visible", window.scrollY>500);
+});
+function toggleMenu(){ document.getElementById("menu").classList.toggle("ouvert"); }
+// Fermer le menu mobile au clic sur un lien
+document.querySelectorAll("#menu a").forEach(a=>a.addEventListener("click",()=>{
+  document.getElementById("menu").classList.remove("ouvert");
+}));
+
+/* ---------- 9. ANIMATIONS AU SCROLL + COMPTEURS ---------- */
+let observerR;
+function observerReveal(){
+  if(!observerR){
+    observerR = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add("vu");
+          // barres de compétences
+          e.target.querySelectorAll(".barre span[data-niveau]").forEach(b=>{
+            b.style.width = b.dataset.niveau+"%";
+          });
+          observerR.unobserve(e.target);
+        }
+      });
+    },{threshold:.12});
+  }
+  document.querySelectorAll(".reveal:not(.vu)").forEach(el=>observerR.observe(el));
+}
+// Barres de compétences (cas où elles sont dans un .reveal parent)
+function initBarres(){
+  const io = new IntersectionObserver(es=>{
+    es.forEach(e=>{ if(e.isIntersecting){ e.target.style.width=e.target.dataset.niveau+"%"; io.unobserve(e.target);} });
+  },{threshold:.4});
+  document.querySelectorAll(".barre span[data-niveau]").forEach(b=>io.observe(b));
+}
+// Compteurs animés
+function initCompteurs(){
+  const io = new IntersectionObserver(es=>{
+    es.forEach(e=>{
+      if(e.isIntersecting){
+        const el = e.target, cible = +el.dataset.cible, suff = el.dataset.suffixe||"";
+        let n = 0; const pas = Math.max(1,Math.ceil(cible/45));
+        const t = setInterval(()=>{
+          n += pas; if(n>=cible){n=cible;clearInterval(t);}
+          el.textContent = n + suff;
+        },28);
+        io.unobserve(el);
+      }
+    });
+  },{threshold:.5});
+  document.querySelectorAll(".compteur").forEach(c=>io.observe(c));
+}
+
+/* ---------- 10. FORMULAIRE CONTACT ---------- */
+function envoyerForm(){
+  const nom = document.getElementById("c-nom").value.trim();
+  const email = document.getElementById("c-email").value.trim();
+  const sujet = document.getElementById("c-sujet").value.trim();
+  const msg = document.getElementById("c-msg").value.trim();
+  const corps = encodeURIComponent(`Nom: ${nom}\nEmail: ${email}\n\n${msg}`);
+  const obj = encodeURIComponent(sujet||"Demande via le portfolio");
+  window.location.href = `mailto:sanouafa@gmail.com?subject=${obj}&body=${corps}`;
+  document.getElementById("form-msg").classList.add("ok");
+}
+
+/* ---------- INITIALISATION ---------- */
+document.addEventListener("DOMContentLoaded",()=>{
+  document.getElementById("annee").textContent = new Date().getFullYear();
+  rendreProjets();
+  rendreDocs();
+  initFiltresProjets();
+  initFiltresBiblio();
+  observerReveal();
+  initBarres();
+  initCompteurs();
+  setLang("fr");
+});
+</script>
+</body>
+</html>
