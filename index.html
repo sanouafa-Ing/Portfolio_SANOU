@@ -6,7 +6,7 @@
 
 <!-- ======================= SEO DE BASE ======================= -->
 <title>SANOU Antoine Franck A. — Ingénieur Génie Civil | Calcul de Structures</title>
-<meta name="description" content="Ingénieur structures à Ouagadougou : plans d'architecture avec architectes partenaires, étude béton armé et charpente métallique, plans d'exécution, suivi de chantier et construction clé en main.">
+<meta name="description" content="Ingénieur structures à Ouagadougou : plans d'architecture avec architectes partenaires, étude béton armé et charpente métallique, plans d'exécution, suivi de chantier, construction clé en main et formation sur Arche Ossature.">
 <meta name="author" content="SANOU Antoine Franck A.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1f2326">
@@ -520,6 +520,27 @@ html[data-theme="dark"] .offre{background:linear-gradient(135deg,#2a2d30,#5a2e1a
 .contact-perso p{font-size:.92rem;color:var(--texte-doux)}
 @media(max-width:980px){.portrait{margin-left:auto;margin-right:auto}}
 
+/* Formation */
+.formation{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;margin-top:46px;background:var(--surface);border:1px solid var(--bordure);border-left:5px solid var(--laterite);border-radius:var(--rayon);padding:36px;box-shadow:var(--ombre)}
+.formation-badge{display:inline-block;font-family:'IBM Plex Mono';font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--laterite);padding:5px 12px;border-radius:30px;margin-bottom:14px}
+.formation h3{font-size:1.5rem;color:var(--encre);margin-bottom:12px}
+.formation p{color:var(--texte-doux);margin-bottom:14px}
+.formation ul{list-style:none;margin-bottom:16px}
+.formation li{position:relative;padding-left:26px;margin-bottom:7px;font-size:.95rem}
+.formation li::before{content:"";position:absolute;left:4px;top:.55em;width:10px;height:10px;border-radius:3px;background:var(--ocre)}
+.formation-offres{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:4px 0 20px}
+.formation-offres div{background:var(--gris-clair);border-radius:10px;padding:10px 12px}
+.formation-offres b{display:block;font-family:'IBM Plex Mono';font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.formation-offres span{display:block;font-family:'Sora';font-weight:700;color:var(--encre);font-size:.95rem;margin-top:2px}
+.formation-offres small{display:block;font-size:.75rem;color:var(--texte-doux);margin-top:2px;line-height:1.3}
+@media(max-width:680px){.formation-offres{grid-template-columns:1fr}}
+.formation-visuel{position:relative;padding-bottom:22%}
+.formation-visuel img{height:auto;border-radius:14px;box-shadow:var(--ombre-forte);background:#e9e7e1}
+.formation-visuel img:first-child{width:78%;aspect-ratio:1.17;object-fit:cover}
+.formation-visuel img:last-child{position:absolute;right:0;bottom:0;width:62%;aspect-ratio:1.414;object-fit:cover;object-position:top left;background:#fff;border:3px solid var(--surface)}
+@media(max-width:980px){.formation{grid-template-columns:1fr}.formation-visuel{max-width:480px;width:100%}}
+@media(max-width:680px){.formation{padding:24px}}
+
 /* Formulaire */
 .champ .requis{color:#e0506b}
 .form-actions{display:flex;gap:12px;flex-wrap:wrap}
@@ -813,6 +834,33 @@ html[data-theme="dark"] .offre{background:linear-gradient(135deg,#2a2d30,#5a2e1a
         <p data-fr="Pas encore de plans ? Mes architectes partenaires conçoivent votre projet (plans, façades, rendus 3D), puis j'en calcule la structure : études cohérentes dès le départ." data-en="No drawings yet? My partner architects design your project (plans, elevations, 3D renders), then I design its structure: consistent studies from the start.">Pas encore de plans ? Mes architectes partenaires conçoivent votre projet (plans, façades, rendus 3D), puis j'en calcule la structure : études cohérentes dès le départ.</p>
       </div>
     </div>
+
+    <div class="formation reveal" id="formation">
+      <div class="formation-texte">
+        <span class="formation-badge" data-fr="Nouveau · Formation" data-en="New · Training">Nouveau · Formation</span>
+        <h3 data-fr="Formation au calcul de structures sur Arche Ossature" data-en="Structural design training with Arche Ossature">Formation au calcul de structures sur Arche Ossature</h3>
+        <p data-fr="Étudiants, techniciens, jeunes ingénieurs ou dessinateurs : apprenez à calculer un bâtiment en béton armé avec Arche Ossature, avec un ingénieur qui l'utilise sur de vrais projets." data-en="Students, technicians, young engineers or draughtsmen: learn to design a reinforced concrete building with Arche Ossature, from an engineer who uses it on real projects.">Étudiants, techniciens, jeunes ingénieurs ou dessinateurs : apprenez à calculer un bâtiment en béton armé avec Arche Ossature, avec un ingénieur qui l'utilise sur de vrais projets.</p>
+        <ul>
+          <li data-fr="Modéliser un bâtiment : trame, poteaux, poutres, planchers, voiles" data-en="Modelling a building: grid, columns, beams, slabs, walls">Modéliser un bâtiment : trame, poteaux, poutres, planchers, voiles</li>
+          <li data-fr="Saisir les charges et lire la descente de charges" data-en="Entering loads and reading the load descent">Saisir les charges et lire la descente de charges</li>
+          <li data-fr="Dimensionner et ferrailler poteaux, poutres, semelles et dalles" data-en="Designing and reinforcing columns, beams, footings and slabs">Dimensionner et ferrailler poteaux, poutres, semelles et dalles</li>
+          <li data-fr="Exploiter les résultats et produire les plans de ferraillage" data-en="Using results and producing reinforcement drawings">Exploiter les résultats et produire les plans de ferraillage</li>
+          <li data-fr="Travailler sur des cas réels issus de mes projets" data-en="Working on real cases from my projects">Travailler sur des cas réels issus de mes projets</li>
+        </ul>
+        <div class="formation-offres">
+          <div><b data-fr="Durée" data-en="Duration">Durée</b><span data-fr="20 à 30 heures" data-en="20 to 30 hours">20 à 30 heures</span></div>
+          <div><b data-fr="Session de groupe" data-en="Group session">Session de groupe</b><span data-fr="À partir de 50 000 F CFA" data-en="From 50,000 CFA francs">À partir de 50 000 F CFA</span><small data-fr="au lancement de la prochaine session" data-en="when the next session starts">au lancement de la prochaine session</small></div>
+          <div><b data-fr="Formation individuelle" data-en="One-to-one training">Formation individuelle</b><span data-fr="À partir de 100 000 F CFA" data-en="From 100,000 CFA francs">À partir de 100 000 F CFA</span><small data-fr="présentiel ou en ligne, conditions à définir" data-en="in person or online, terms to be agreed">présentiel ou en ligne, conditions à définir</small></div>
+        </div>
+        <a href="#contact" class="btn btn-primaire" onclick="document.getElementById('c-sujet').value=langue==='fr'?'Formation Arche Ossature':'Arche Ossature training'"><span data-fr="Je veux me former" data-en="I want to train">Je veux me former</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="formation-visuel">
+        <img src="assets/projets/villa-r2.jpg" alt="Modèle 3D d'un bâtiment dans Arche Ossature" loading="lazy" width="900" height="767">
+        <img src="assets/projets/plan-poutre.jpg" alt="Plan de ferraillage d'une poutre produit avec Arche Ossature" loading="lazy" width="1600" height="1131">
+      </div>
+    </div>
   </div>
 </section>
 
@@ -822,7 +870,7 @@ html[data-theme="dark"] .offre{background:linear-gradient(135deg,#2a2d30,#5a2e1a
     <div class="reveal">
       <span class="eyebrow" data-fr="Réalisations" data-en="Portfolio">Réalisations</span>
       <h2 class="section-titre" data-fr="Quelques études réalisées" data-en="Selected studies">Quelques études réalisées</h2>
-      <p class="section-intro" data-fr="Rendus architecturaux des projets et, en incrustation, le modèle de calcul de la structure (Arche Ossature, Robot). Certaines études ont été menées en collaboration avec d'autres ingénieurs. Par respect de la confidentialité, les maîtres d'ouvrage ne sont pas nommés." data-en="Architectural renders of each project with, inset, the structural design model (Arche Ossature, Robot). Some studies were carried out with fellow engineers. For confidentiality, clients are not named.">Rendus architecturaux des projets et, en incrustation, le modèle de calcul de la structure (Arche Ossature, Robot). Certaines études ont été menées en collaboration avec d'autres ingénieurs. Par respect de la confidentialité, les maîtres d'ouvrage ne sont pas nommés.</p>
+      <p class="section-intro" data-fr="Rendus de nos architectes partenaires et, en incrustation, le modèle de calcul de la structure (Arche Ossature, Robot). Certaines études ont été menées en collaboration avec d'autres ingénieurs. Par respect de la confidentialité, les maîtres d'ouvrage ne sont pas nommés." data-en="Renders by our partner architects with, inset, the structural design model (Arche Ossature, Robot). Some studies were carried out with fellow engineers. For confidentiality, clients are not named.">Rendus de nos architectes partenaires et, en incrustation, le modèle de calcul de la structure (Arche Ossature, Robot). Certaines études ont été menées en collaboration avec d'autres ingénieurs. Par respect de la confidentialité, les maîtres d'ouvrage ne sont pas nommés.</p>
     </div>
 
     <!-- Filtres dynamiques -->
@@ -935,7 +983,7 @@ html[data-theme="dark"] .offre{background:linear-gradient(135deg,#2a2d30,#5a2e1a
         </div>
         <div class="champ">
           <label for="c-sujet" data-fr="Type de projet" data-en="Project type">Type de projet</label>
-          <input type="text" id="c-sujet" data-fr-ph="Ex. : villa R+1, immeuble R+3, entrepôt..." data-en-ph="E.g. 2-storey villa, 4-storey building, warehouse..." placeholder="Ex. : villa R+1, immeuble R+3, entrepôt...">
+          <input type="text" id="c-sujet" data-fr-ph="Ex. : villa R+1, immeuble R+3, entrepôt, formation..." data-en-ph="E.g. 2-storey villa, 4-storey building, warehouse, training..." placeholder="Ex. : villa R+1, immeuble R+3, entrepôt, formation...">
         </div>
         <div class="champ">
           <label for="c-msg"><span>Message</span> <span class="requis" aria-hidden="true">*</span></label>
@@ -1227,7 +1275,7 @@ function ouvrirProjet(i){
   const det = (langue==="fr"?p.detailsFr:p.detailsEn).map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("");
   ouvrirModale(t(p.titreFr,p.titreEn), `
     <div class="cas-images ${p.rendu?'double':''}">
-      ${p.rendu?`<figure><img src="${p.rendu}" alt="${echap(t('Rendu architectural','Architectural render'))}"><figcaption>${t("Rendu de l'architecte du projet","Project architect's render")}</figcaption></figure>`:""}
+      ${p.rendu?`<figure><img src="${p.rendu}" alt="${echap(t('Rendu architectural','Architectural render'))}"><figcaption>${t("Rendu : notre architecte partenaire","Render: our partner architect")}</figcaption></figure>`:""}
       ${p.plans?"":`<figure><img src="${p.img}" alt="${echap(t('Modèle 3D de calcul','3D design model'))}"><figcaption>${t("Modèle de calcul de la structure","Structural design model")}</figcaption></figure>`}
     </div>
     <div class="cas-texte">
